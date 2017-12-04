@@ -33,7 +33,6 @@ import { DinCalculatorService } from './services/din-calculator.service';
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
     FlexLayoutModule,
     MaterialDesignModule
   ],
