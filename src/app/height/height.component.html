@@ -1,0 +1,9 @@
+<mat-form-field fxFlex="100">
+    <mat-select placeholder="Skier Height" (change)="onUpdate($event)">
+
+    <mat-option *ngFor="let height of heights" [value]="height">
+      {{ height.description }} cm
+    </mat-option>
+
+  </mat-select>
+</mat-form-field>

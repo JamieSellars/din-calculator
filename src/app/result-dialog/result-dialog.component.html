@@ -1,0 +1,9 @@
+<h1>DIN Setting</h1>
+
+<span class="din-result">
+  {{ data.result }}
+</span>
+
+<span *ngIf="data.result == null">
+  Unable to determine DIN value. Please check the allocated settings.
+</span>

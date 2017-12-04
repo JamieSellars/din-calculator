@@ -1,0 +1,9 @@
+<mat-form-field fxFlex="100">
+  <mat-select placeholder="Skier Weight" (change)="onUpdate($event)">
+
+    <mat-option *ngFor="let weight of weights" [value]="weight">
+      {{ weight.description }} kg
+    </mat-option>
+
+  </mat-select>
+</mat-form-field>

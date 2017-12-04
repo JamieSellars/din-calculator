@@ -1,0 +1,9 @@
+<mat-form-field fxFlex="100">
+    <mat-select placeholder="Sole Length" (change)="onUpdate($event)">
+  
+      <mat-option *ngFor="let soleLength of soleLengths" [value]="soleLength">
+        {{ soleLength.description }} mm
+      </mat-option>
+  
+    </mat-select>
+  </mat-form-field>
