@@ -59,9 +59,7 @@ export class DinCalculatorService {
   getDINBySkierCodeAndSoleLength(dinSetting: DINSetting, skierCode)
   {
     let skierCodeIndex = this._skierCodes.indexOf(skierCode);
-
     return this._dins[skierCodeIndex][dinSetting.soleLength.index];
-
   }
  
 
@@ -74,45 +72,46 @@ export class DinCalculatorService {
     this._dins.push([1,1,0.75,null,null,null]);
 
     // C 
-    this._dins.push([1.25,1.25,1,null,null,null]);
+    this._dins.push([1.5,1.25,1,null,null,null]);
 
     // D
-    this._dins.push([1.75,1.25,1,null,null,null]);
+    this._dins.push([1.75,1.5,1.5,1.25,null,null]);
 
     // E
-    this._dins.push([2,2,1.75,null,null,null]);
+    this._dins.push([2.25,2,1.75,1.5,1.5,null]);
     
     // F 
-    this._dins.push([2.5,2.5,2.25,2,1.75,1.75]);
+    this._dins.push([2.75,2.5,2.25,2,1.75,1.5]);
 
     // G
-    this._dins.push([null,3,2.5,2.5,2.25,2]);    
+    this._dins.push([3.5,3,2.75,2.5,2.25,2]);    
 
     // H 
-    this._dins.push([null,3.5,3,3,2.5,2.5]);    
+    this._dins.push([null,3.5,3,3,2.75,2.5]);    
     
     // I
-    this._dins.push([null,4.25,4,3.5,3.25,3.25]);
+    this._dins.push([null,4.5,4,3.5,3.5,3]);
 
     // J
-    this._dins.push([null,5,4.75,4.5,4,4]);
+    this._dins.push([null,5.5,5,4.5,4,3.5]);
 
     // K
-    this._dins.push([null,6,5.5,5.25,5,4.75]);
+    this._dins.push([null,6.5,6,5.5,5,4.5]);
 
     // L 
-    this._dins.push([null,7,6.75,6.25,6,5.75]);
+    this._dins.push([null,7.5,7,6.5,6,5.5]);
 
     // M
-    this._dins.push([null,8.5,8,7.5,7,6.75]);
+    this._dins.push([null,null,8.5,8,7,6.5]);
 
     // N 
-    this._dins.push([null,10,9.5,9.0,8.5,8.25]);
+    this._dins.push([null,null,10,9.5,8.5,8]);
 
     // 0
-    this._dins.push([null,12,11.25,10.75,10.25,10]);
+    this._dins.push([null,null,11.5,11,10,9.5]);
+
+    // P
+    this._dins.push([null,null,null,null,12, 11.5]);
   }
     
-
-
 }
