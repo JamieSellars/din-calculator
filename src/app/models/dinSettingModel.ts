@@ -1,7 +1,9 @@
 export interface DINSettingModel 
 {
-  description: string;
-  value: any;
+  description?: string,
+  metric?: string;
+  imperial?: string;
+  value?: any;
   skierCode?: string;
   index?: number;
 }

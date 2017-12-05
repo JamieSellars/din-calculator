@@ -2,7 +2,8 @@
   <mat-select placeholder="Skier Weight" (change)="onUpdate($event)">
 
     <mat-option *ngFor="let weight of weights" [value]="weight">
-      {{ weight.description }} kg
+        <strong fxFlex>{{ weight.metric }} kg</strong>&nbsp;
+        <small fxFlex>{{ weight.imperial }} lb</small>
     </mat-option>
 
   </mat-select>

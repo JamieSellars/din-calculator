@@ -1,8 +1,10 @@
 <mat-form-field fxFlex="100">
     <mat-select placeholder="Skier Height" (change)="onUpdate($event)">
 
+
     <mat-option *ngFor="let height of heights" [value]="height">
-      {{ height.description }} cm
+      <strong fxFlex>{{ height.metric }}cm</strong>&nbsp;
+      <small fxFlex>{{ height.imperial }}</small>
     </mat-option>
 
   </mat-select>

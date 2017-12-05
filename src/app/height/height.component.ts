@@ -12,12 +12,12 @@ export class HeightComponent implements OnInit {
   @Output() selected: EventEmitter<string> = new EventEmitter<string>();
   
   heights: DINSettingModel[] = [
-    { description: 'Less or Equal to 148',  value: '148',       skierCode: 'H', index: 7 },
-    { description: '149 - 157',             value: '149 - 157', skierCode: 'I', index: 8  },
-    { description: '158 - 166',             value: '158 - 166', skierCode: 'J', index: 9  },
-    { description: '167 - 178',             value: '167 - 178', skierCode: 'K', index: 10  },
-    { description: '179 - 194',             value: '179 - 194', skierCode: 'L', index: 11  },
-    { description: 'Greater than 195',      value: '195+',      skierCode: 'M', index: 12  },
+    { metric: '< 148',      imperial: '< 4\'10"',  skierCode: 'H', index: 7 },
+    { metric: '149 - 157',  imperial: '4\'11" - 5\'1"',  skierCode: 'I', index: 8  },
+    { metric: '158 - 166',  imperial: '5\'2" - 5\'5"',  skierCode: 'J', index: 9  },
+    { metric: '167 - 178',  imperial: '5\'6" - 5\'10"',  skierCode: 'K', index: 10  },
+    { metric: '179 - 194',  imperial: '5\'11" - 6\'4"',  skierCode: 'L', index: 11  },
+    { metric: '> 195',      imperial: '> 6\'5"',  skierCode: 'M', index: 12  },
   ];
 
   constructor() { }

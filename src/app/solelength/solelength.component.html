@@ -2,7 +2,7 @@
     <mat-select placeholder="Sole Length" (change)="onUpdate($event)">
   
       <mat-option *ngFor="let soleLength of soleLengths" [value]="soleLength">
-        {{ soleLength.description }} mm
+        {{ soleLength.metric }} mm
       </mat-option>
   
     </mat-select>
