@@ -1,6 +1,10 @@
-# Dinchart
+# DIN Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+A DIN Calculator using Angular CLI and Material Design. There is zero requirement for a backend. This is a frontend only solution.
+
+## References
+
+DIN Values are derived from a Salomon Binding Chart
 
 ## Development server
 
