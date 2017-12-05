@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { SkillComponent } from './skill/skill.component';
 import { DINSetting } from './models/dinSetting';
 import { ResultComponent } from './result/result.component';
+import { DINSettingModel } from './models/dinSettingModel';
 
 @Component({
   selector: 'app-root',
@@ -14,19 +15,19 @@ export class AppComponent {
 
   din: DINSetting = new DINSetting();
 
-  onSkillUpdate(skill: string){
+  onSkillUpdate(skill: DINSettingModel){
     this.din.skill = skill;
   }
-  onAgeUpdate(age: string){
+  onAgeUpdate(age: DINSettingModel){
     this.din.age = age;
   }
-  onWeightUpdate(weight: string){
+  onWeightUpdate(weight: DINSettingModel){
     this.din.weight = weight;
   }
-  onHeightUpdate(height: string){
+  onHeightUpdate(height: DINSettingModel){
     this.din.height = height;
   }
-  onSoleLengthUpdate(soleLength: string){
+  onSoleLengthUpdate(soleLength: DINSettingModel){
     this.din.soleLength = soleLength;
   }
 
