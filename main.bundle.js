@@ -802,9 +802,8 @@ var SolelengthComponent = (function () {
             { metric: '271 - 290', index: 3, value: '271 - 290' },
             { metric: '291 - 310', index: 4, value: '291 - 310' },
             { metric: '311 - 330', index: 5, value: '311 - 330' },
-            { metric: '311 - 330', index: 6, value: '311 - 330' },
-            { metric: '331 - 350', index: 7, value: '331 - 350' },
-            { metric: 'Greater than 351', index: 8, value: '> 351' }
+            { metric: '331 - 350', index: 6, value: '331 - 350' },
+            { metric: 'Greater than 351', index: 7, value: '> 351' }
         ];
     }
     SolelengthComponent.prototype.ngOnInit = function () {
