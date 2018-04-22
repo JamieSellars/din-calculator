@@ -14,13 +14,17 @@ export class AppComponent {
  
   @ViewChild('results') results: ResultComponent;
 
-  din: DINSetting = new DINSetting();
+  din: DINSetting;
 
   constructor(
     @Inject(DOCUMENT) public document
-  )
-  {}
+  ) {
+    this.initiateDIN()
+  }
 
+  initiateDIN() {
+    this.din = new DINSetting();
+  }
 
   onSkillUpdate(skill: DINSettingModel){
     this.din.skill = skill;
@@ -40,6 +44,10 @@ export class AppComponent {
 
   calculateDINSetting(){
     this.results.calculateDIN(this.din);
+  }
+
+  onComplete() {
+    window.location.reload()
   }
 
   toggleFullscreen(){
