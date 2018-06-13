@@ -12,8 +12,8 @@ export class AgeComponent implements OnInit {
   @Output() selected: EventEmitter<string> = new EventEmitter<string>();
   
   ages: DINSettingModel[] = [
-    { description: 'Under 16 Years', value: 'Under 16 Years', index: 0 },
-    { description: '16 - 50 Years', value: '16 - 50 Years', index: 1 },
+    { description: '9 and Under', value: '9 and Under', index: 0 },
+    { description: '10 - 50 Years', value: '10 - 50 Years', index: 1 },
     { description: 'Over 50 Years', value: 'Over 50 Years', index: 2 }
   ];
 

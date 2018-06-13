@@ -1,5 +1,5 @@
 <h4>Skier Age</h4>
-<mat-radio-group fxLayout="column" (change)="onUpdate($event)">
+<mat-radio-group fxLayout="row" fxLayoutAlign="space-between center" (change)="onUpdate($event)">
   <mat-radio-button *ngFor="let age of ages" [value]="age" required>
     {{ age.description }}
   </mat-radio-button>

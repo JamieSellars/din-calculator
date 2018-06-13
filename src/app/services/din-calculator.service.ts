@@ -40,6 +40,7 @@ export class DinCalculatorService {
 
     // if skier type 1 (cautious) remain (DO NOTHING)
 
+
     // if skier type 2 (moderate) move index up one skier code
     if( dinSetting.skill.index == 1 )
       skierCodeIndex = skierCodeIndex + 1;
@@ -49,16 +50,20 @@ export class DinCalculatorService {
       skierCodeIndex = skierCodeIndex + 2;
 
     // If age > 50 years move up demote skier code
-    if( dinSetting.age.index == 2 ) 
+    if( dinSetting.age.index == 2 || dinSetting.age.index == 0) 
       skierCodeIndex = skierCodeIndex - 1;    
 
     return skierCode = this._skierCodes[skierCodeIndex];
     
   }
 
-  getDINBySkierCodeAndSoleLength(dinSetting: DINSetting, skierCode)
-  {
+  getDINBySkierCodeAndSoleLength(dinSetting: DINSetting, skierCode){
     let skierCodeIndex = this._skierCodes.indexOf(skierCode);
+
+    // If index drops below zero, reset it to the minimum of 0
+    if( skierCodeIndex === -1 )
+      skierCodeIndex = 0
+
     return this._dins[skierCodeIndex][dinSetting.soleLength.index];
   }
  

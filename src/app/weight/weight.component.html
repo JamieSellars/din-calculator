@@ -1,5 +1,5 @@
-<mat-form-field fxFlex="100">
-  <mat-select placeholder="Skier Weight" (change)="onUpdate($event)">
+<mat-form-field class="full-width">
+  <mat-select fxFlex="100" placeholder="Skier Weight" (change)="onUpdate($event)">
 
     <mat-option *ngFor="let weight of weights" [value]="weight">
         <strong fxFlex>{{ weight.metric }} kg</strong>&nbsp;

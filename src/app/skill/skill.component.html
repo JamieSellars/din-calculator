@@ -1,5 +1,5 @@
 <h4>Skier Type</h4>
-<mat-radio-group fxLayout="column" (change)="onUpdate($event)" required>
+<mat-radio-group fxLayout="row"  fxLayoutAlign="space-between center" (change)="onUpdate($event)" required>
   <mat-radio-button *ngFor="let skill of skills" [value]="skill">
     {{ skill.description }}
   </mat-radio-button>
